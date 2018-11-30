@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Movie Noir</title>
+    <link rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <body onload="startTime()"style="background-color: #404040; width: 100%; margin: auto; min-width: 600px; max-width: 2000px">
+
+    <div id="txt"></div>
+
+    <section id="title-section">
+
+      <img id="logo" src="Logo.jpg">
+      <h1 id="title"><u style="text-decoration-color: #FFD700;">Movie Noir<u/></h1>
+
+
+    </section>
+
+    <div class="nav">
+
+      <a href="home.html" style="padding-right: 215px">Home<a/>
+      <a href="movies.html" style="padding-right: 215px">Movies</a>
+      <a href="shop.html" style="padding-right: 215px">Shop</a>
+      <a href="contact.html" style="padding-right: 215px">Contact us</a>
+      <a href="story.html">Our Story</a>
+
+    </div>
+
+    <section>
+
+      <h2 id="sub"><u style="text-decoration-color: #FFD700;">Unique Movies</u><h2>
+
+    </section>
+
+    <div id="Movies">
+
+    <section id="unique" style="margin-left: 200px; margin-right: 360px" >
+
+      <a href="https://www.youtube.com/watch?v=UHl8F60t-ss" target="_blank">
+      <img id="Pan" src="Pan.png" alt="Pan"style="width 1%; height 1%">
+      </a>
+      <h3 style="text-align: center; color: white; font-size: 15px"> <u>Pans Labyrinth</u><br>In the falangist Spain of 1944, <br>the bookish young stepdaughter <br>of a sadistic army officer <br>escapes into an eerie but captivating <br>fantasy world.</h3>
+
+    </section>
+
+    <section id="unique" style="margin-right: 320px">
+
+      <a href="https://www.youtube.com/watch?v=Q-IZ4AatNa8" target="_blank">
+      <img id="Blondes"src="Blondes.png" alt="Blondes"style="width 1%; height 1%">
+      <a>
+      <h3 style="text-align: center; color: white; font-size: 15px"><u>Gentlemen Prefer Blondes</u><br>Showgirls Lorelei Lee and <br>Dorothy Shaw travel to Paris, <br>pursued by a private detective <br>hired by the suspicious father of <br>Lorelei's fiancé, as well as a rich, <br>enamored old man and <br>many other doting admirers.</h3>
+
+    </section>
+
+    <section id="unique" style="margin-left: 80px">
+
+      <a href="https://www.youtube.com/watch?v=YXIr1P9Fm5A" target="_blank">
+      <img id="Kane"src="Kane.png" alt="Kane"style="width 1%; height 1%">
+      </a>
+      <h3 style="text-align: center; color: white; font-size: 15px"> <u>Citizen Kane</u><br>Following the death of a <br>publishing tycoon, news <br>reporters scramble <br>to discover <br>the meaning of his <br>final utterance.</h3>
+
+    </section>
+  </div>
+</body>
+
+    <script>
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+    }
+    </script>
+
+    <script src="javascript/main.js"></script>
+
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Noir</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+    }
+  </script>
+
+  </head>
+
+  <body onload="startTime()"style="background-color: #404040;">
+
+    <div id="txt"></div>
+
+    <section id="title-section">
+
+      <img id="logo" src="Logo.jpg">
+      <h1 id="title"><u style="text-decoration-color: #FFD700;">Movie Noir<u/></h1>
+
+    </section>
+
+    <div class="nav">
+
+      <a href="home.html" style="padding-right: 215px">Home<a/>
+      <a href="movies.html" style="padding-right: 215px">Movies</a>
+      <a href="shop.html" style="padding-right: 215px">Shop</a>
+      <a href="contact.html" style="padding-right: 215px">Contact us</a>
+      <a href="story.html">Our Story</a>
+
+    </div>
+
+    <section>
+
+      <h2 id="sub"><u style="text-decoration-color: #FFD700;">Food and Drink</u><h2>
+
+    </section>
+
+    <table style="text-decoration:none;"id="fad">
+
+      <tr>
+        <th colspan="2">Food</th>
+        <th colspan="2">Drink</th>
+      </tr>
+
+      <tr>
+        <td>Popcorn</td>
+        <td>€4.20</td>
+        <td>Coca Cola</td>
+        <td>€2.80</td>
+      </tr>
+
+      <tr>
+        <td>Large Popcorn</td>
+        <td>€4.80</td>
+        <td>Orangina</td>
+        <td>€2.30</td>
+      </tr>
+
+      <tr>
+        <td>Haribo Dragibus</td>
+        <td>€2.00</td>
+        <td>Schweppes</td>
+        <td>€2.40</td>
+      </tr>
+
+      <tr>
+        <td>Haribo Tagada</td>
+        <td>€3.00</td>
+        <td>Fanta</td>
+        <td>€2.60</td>
+      </tr>
+
+      <tr>
+        <td>Nachos</td>
+        <td>€3.80</td>
+        <td>7up</td>
+        <td>€2.20</td>
+      </tr>
+
+      <tr>
+        <td>Macaron</td>
+        <td>€3.40</td>
+        <td>Oasis</td>
+        <td>€2.50</td>
+      </tr>
+
+    </table>

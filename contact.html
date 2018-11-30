@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Noir</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+    }
+  </script>
+
+  </head>
+  <body onload="startTime()" style="background-color: #404040; width: 100%; margin: auto; min-width: 600px; max-width: 2000px">
+
+    <div id="txt"></div>
+
+    <section id="title-section">
+
+      <img id="logo" src="Logo.jpg">
+      <h1 id="title"><u style="text-decoration-color: #FFD700;">Movie Noir<u/></h1>
+
+
+    </section>
+
+    <div class="nav">
+
+      <a href="home.html" style="padding-right: 215px">Home<a/>
+      <a href="movies.html" style="padding-right: 215px">Movies</a>
+      <a href="shop.html" style="padding-right: 215px">Shop</a>
+      <a href="contact.html" style="padding-right: 215px">Contact us</a>
+      <a href="story.html">Our Story</a>
+
+    </div>
+
+    <section>
+
+      <h2 id="sub"><u style="text-decoration-color: #FFD700;">Contact Us</u><h2>
+
+    </section>
+
+    <section id="contacts">
+      <h3 class="cont">Telephone Number: 05 62 92 30 30</h3>
+      <h3 class="cont">Opening times:10.00am - 9.00pm, Monday-Sunday</h3>
+      <h3 class="cont">Email:  MovieNoir@Bmail.com</h3>
+      <h3 class="cont">Address: 20 Place du 8 Mai, Luz-Saint-Sauveur</h3>
+
+    </section>
+
+    <section id="find_us">
+      <h3 style="color: white; font-family: Monotype Corsiva">Where to find us</h3>
+      <img src="Location.png" alt="Location" id="location">
+
+    </section>

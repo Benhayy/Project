@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Noir</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+    }
+  </script>
+
+  </head>
+
+  <body onload="startTime()" style="background-color: #404040; width: 100%; margin: auto; min-width: 600px; max-width: 2000px">
+
+    <div id="txt"></div>
+
+    <section id="title-section">
+
+      <img id="logo" src="Logo.jpg">
+
+      <h1 id="title"><u style="text-decoration-color: #FFD700;">Movie Noir<u/></h1>
+
+    </section>
+
+    <div class="nav">
+
+      <a href="home.html" style="padding-right: 215px">Home<a/>
+      <a href="movies.html" style="padding-right: 215px">Movies</a>
+      <a href="shop.html" style="padding-right: 215px">Shop</a>
+      <a href="contact.html" style="padding-right: 215px">Contact us</a>
+      <a href="story.html">Our Story</a>
+
+    </div>
+
+    <section>
+
+      <h2 id="sub"><u style="text-decoration-color: #FFD700;">Currently Showing</u><h2>
+
+    </section>
+
+    <section id="movie_segment1">
+
+      <a href="https://www.imdb.com/title/tt4123430/?ref_=nv_sr_1" target=_blank>
+      <img src="Beast.png" alt="Fantastic Beasts"style="width 1%; height 1%">
+      </a>
+      <h3 style="text-align: center; color: white; font-size: 15px">Fantastic Beasts: <br> Crimes of Grindelwald</h3>
+
+    </section>
+
+    <section id="movie_segment2">
+
+      <a href="https://www.imdb.com/title/tt6343314/?ref_=nv_sr_1" target=_blank>
+      <img src="Creed.png" alt="Creed 2"style="width 100%;">
+      </a>
+      <h3 style="text-align: center; color: white; font-size: 15px; padding-top: 14.5px">Creed II</h3>
+
+    </section>
+
+    <section id="movie_segment3">
+
+      <a href="https://www.imdb.com/title/tt5734576/?ref_=nv_sr_1" target=_blank>
+      <img src="Hannah.png" alt="Possession of Hannah"style="width 100%;">
+      </a>
+      <h3 style="text-align: center; color: white; font-size: 15px">The Possession of <br>Hannah Grace</h3>
+
+    </section>
+
+    <section id="movie_segment4">
+
+      <a href="https://www.imdb.com/title/tt5848272/?ref_=nv_sr_1" target=_blank>
+      <img src="Ralph.png" alt="Ralph"style="width 100%;">
+      </a>
+      <h3 style="text-align: center; color: white; font-size: 15px; padding-top: 6px">Ralph breaks the<br> Internet</h3>
+
+    </section>
+
+    <section id="movie_segment5">
+
+      <a href="https://www.imdb.com/title/tt4218572/?ref_=nv_sr_1" target=_blank>
+      <img src="Widows.png" alt="Widows"style="width 100%;">
+      </a>
+      <h3 style="text-align: center; color: white; font-size: 15px; padding-top: 14.5px">Widows</h3>
+
+    </section>
+  </body>
+</html>

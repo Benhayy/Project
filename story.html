@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Noir</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <script>
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+    if (i < 10) {i = "0" + i};
+    return i;
+    }
+  </script>
+
+  </head>
+  <body onload="startTime() "style="background-color: #404040; width: 100%; margin: auto; min-width: 600px; max-width: 2000px;">
+
+    <div id="txt"></div>
+
+    <section id="title-section">
+
+      <img id="logo" src="Logo.jpg">
+      <h1 id="title"><u style="text-decoration-color: #FFD700;">Movie Noir<u/></h1>
+
+
+    </section>
+
+    <div class="nav">
+
+      <a href="home.html" style="padding-right: 215px">Home<a/>
+      <a href="movies.html" style="padding-right: 215px">Movies</a>
+      <a href="shop.html" style="padding-right: 215px">Shop</a>
+      <a href="contact.html" style="padding-right: 215px">Contact us</a>
+      <a href="story.html">Our Story</a>
+
+    </div>
+
+    <section>
+
+      <h2 id="sub"><u style="text-decoration-color: #FFD700;">Our Story</u><h2>
+
+    </section>
+
+    <section id="story">
+      <h2 style="font-family: Monotype Corsiva; color: white;font-size:30px"><u>Origin Story</u></h2>
+        <p style="font-family: Verdana; color: white; font-size: 15px">We are a small family who have been living in the south of France for 50+ years. We began our business by hosting movies at our house for people in the area to watch as the town we lived in was quite isolated. These people seemed to really enjoy themselves when watching the movies so we took it upon ourselves to expand and begin our own cinema in order to bring entertainment to people who couldn’t travel long distances to find a cinema. Over the years we have hosted thousands of movies, all while keeping our intentions to entertain and let people enjoy themselves. </p>
+
+    </section>
+
+    <section id="story2">
+      <h2 style="font-family: Monotype Corsiva; color: white;font-size:30px"><u>What we want to achieve</u></h2>
+        <p style="font-family: Verdana; color: white; font-size: 15px">Here at Movie Noir we aim to entertain everyone by giving them a variety of movies to choose form for a reasonable price. We want to stay true to our roots by focusing on pleasing our customers instead of making the most profit possible. Our goal is to open cinema’s all over France with the intent to entertain and have the best prices, friendliest staff and the highest quality out of all the cinemas in France.</p>
+
+    </section>
+
+    <section>
+
+      <img id="story_image"src="Our Story.jpg" alt="Our Story">
+
+    </section>
